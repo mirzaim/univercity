@@ -18,9 +18,14 @@ public class Professor extends AbstractEmployee {
         this.group = group;
     }
 
-    @Deprecated
+    @Override
     public double getCurrentIncome() {
         return 0;
+    }
+
+    @Override
+    public boolean isPromotable() {
+        return false;
     }
 
     public Course[] getCourses() {

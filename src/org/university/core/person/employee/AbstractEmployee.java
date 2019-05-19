@@ -20,6 +20,9 @@ public abstract class AbstractEmployee extends Person {
         bankStatement = new LinkedList<>();
     }
 
+    public abstract double getCurrentIncome();
+
+    public abstract boolean isPromotable();
 
     public void addBankStatement(Statement statement) {
         bankStatement.add(statement);
