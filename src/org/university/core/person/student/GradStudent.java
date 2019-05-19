@@ -25,6 +25,7 @@ public class GradStudent extends AbstractStudent implements AccountingInterface 
 
     @Override
     public double getCurrentIncome() {
+        //Not mentioned how to implement.
         return 0;
     }
 }

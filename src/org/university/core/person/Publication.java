@@ -1,19 +1,21 @@
 package org.university.core.person;
 
+import java.util.Calendar;
+
 public class Publication {
     private String title;
-    private int year;
+    private Calendar publishTime;
 
-    public Publication(String title, int year) {
+    public Publication(String title, Calendar publishTime) {
         this.title = title;
-        this.year = year;
+        this.publishTime = publishTime;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getYear() {
-        return year;
+    public Calendar getPublishTime() {
+        return publishTime;
     }
 }
