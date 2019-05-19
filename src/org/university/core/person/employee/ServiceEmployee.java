@@ -2,7 +2,7 @@ package org.university.core.person.employee;
 
 import org.university.core.person.Department;
 
-public class ServiceEmployee extends AbstractEmployee{
+public class ServiceEmployee extends AccountingInterface {
 
     public ServiceEmployee(String position, double basicIncome,
                            String firstName, String lastName, String id, int joiningYear, Department department) {

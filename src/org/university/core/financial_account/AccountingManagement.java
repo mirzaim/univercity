@@ -2,7 +2,6 @@ package org.university.core.financial_account;
 
 import org.university.core.person.Person;
 import org.university.core.person.Statement;
-import org.university.core.person.employee.AbstractEmployee;
 
 import java.util.ArrayList;
 
@@ -15,7 +14,7 @@ public class AccountingManagement {
         paidStatements = new ArrayList<>();
     }
 
-    public void makeAccount(AbstractEmployee person) {
+    public void makeAccount(AccountingInterface person) {
         accounts.add(new Account(person, 0));
     }
 
@@ -30,10 +29,10 @@ public class AccountingManagement {
 
 
     public final class Account {
-        private final AbstractEmployee owner;
+        private final AccountingInterface owner;
         private double balance;
 
-        public Account(AbstractEmployee owner, double balance) {
+        public Account(AccountingInterface owner, double balance) {
             this.owner = owner;
             this.balance = balance;
         }
@@ -44,7 +43,7 @@ public class AccountingManagement {
             balance += statement.getAmount();
         }
 
-        public AbstractEmployee getOwner() {
+        public AccountingInterface getOwner() {
             return owner;
         }
 

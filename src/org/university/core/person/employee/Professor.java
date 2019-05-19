@@ -5,7 +5,7 @@ import org.university.core.person.Department;
 
 import java.util.ArrayList;
 
-public class Professor extends AbstractEmployee {
+public class Professor extends AccountingInterface {
     private ArrayList<Course> courses;
     private String group;
 

@@ -6,13 +6,13 @@ import org.university.core.person.Statement;
 
 import java.util.LinkedList;
 
-public abstract class AbstractEmployee extends Person {
+public abstract class AccountingInterface extends Person {
     private LinkedList<Statement> bankStatement;
     private String position;
     protected double basicIncome;
 
-    public AbstractEmployee(String position, double basicIncome,
-                            String firstName, String lastName, String id, int joiningYear, Department department) {
+    public AccountingInterface(String position, double basicIncome,
+                               String firstName, String lastName, String id, int joiningYear, Department department) {
         super(firstName, lastName, id, joiningYear, department);
         this.position = position;
         this.basicIncome = basicIncome;
